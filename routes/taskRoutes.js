@@ -4,7 +4,7 @@ const { gettasks, createTask, updateTask } = require("../controllers/taskControl
 const taskRoutes = (req,res)=>{
 
    // const { files } = req;
-   
+
     if (req.methd === 'GET'){
         gettasksasks(req, res)
     }else if (req.methd === 'POST'){
