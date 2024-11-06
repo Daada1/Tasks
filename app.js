@@ -1,9 +1,10 @@
 //app.js
-const http = require('http');
-const taskRoutes = require('./routes/taskRoutes');
+const http = require('http'); // Import the HTTP module to create an HTTP server
+const taskRoutes = require('./routes/taskRoutes'); // Import the taskRoutes module for handling task-related routes
 
-const Hostname = 'localhost';
-const PORT = 3000
+const Hostname = 'localhost'; // Define the hostname where the server will run
+const PORT = 3000; // Define the port number where the server will listen for requests
+
 
 
 const server = http.createServer((req, res)=> {
