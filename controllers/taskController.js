@@ -10,6 +10,7 @@ exports.createTask = (req, res) => {
         }
         const image = files.image[0]
 
+        
        // if (!fields.title) {
         
         const tasks = readTasksFromFile();
@@ -23,8 +24,9 @@ exports.createTask = (req, res) => {
 
         tasks.push(newTask);
         writeTasksToFile(tasks);
-       // res.writeHead(201, {'Content-Type': 'application/json'});
+            // res.writeHead(201, {'Content-Type': 'application/json'});
        // res.end(JSON.stringify(newTask));
+
 
         if(files.image) {
             copyFileSync(files.image.path, path.join(__dirname, '../uploads', files.image.name));
